@@ -19,6 +19,7 @@
 <style lang="scss">
     @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@700&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 .box {
     position: relative;
     font-family: 'Passion One', sans-serif;

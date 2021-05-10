@@ -1,28 +1,32 @@
 <script>
 	import FooterLink from './FooterLink.svelte';
+	let linkedIn = "All business, eh? Check out my LinkedIn!";
+	let twitter = "Follow me on Twitter!";
+	let dribbble = "Check out my latest designs!"
 
 </script>
 
 <main>
 	<footer>
-		<FooterLink src="https://dribble.com" linkName="Dribble" content="Check out my latest web designs!"></FooterLink>
-		<FooterLink src="https://twitter.com" linkName="Twitter" content="Follow me on Twitter!"></FooterLink>
-		<FooterLink src="https://linkedin.com" linkName="LinkedIn" content="All business, eh? Come over to LinkedIn!"></FooterLink>
+		<FooterLink src="https://dribbble.com" linkName="Dribbble" content="{dribbble}"></FooterLink>
+		<FooterLink src="https://twitter.com" linkName="Twitter" content="{twitter}"></FooterLink>
+		<FooterLink src="https://linkedin.com" linkName="LinkedIn" content="{linkedIn}" ></FooterLink>
 	</footer>
 </main>
 
 <style lang="scss">
 	@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@700&display=swap');
-	@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;500;700;900&display=swap');
+
 	main {
-		background-color: rgb(20, 20, 20);
+		background-color: orangered;
 		display: flex;
 		flex-wrap: wrap;
 		align-items: center;
 		justify-content: space-between;
+		width: 100%;
 		height: 100%;
+		max-width: 1440px;
 		padding: 1rem;
-		max-width: 1200px;
 		@media (orientation: portrait) {
 			flex-direction: column;
 		}
@@ -30,7 +34,7 @@
 			flex-direction: row;
 		}
 		footer {
-			background-color: rgb(20, 20, 20);
+			background-color: orangered;
 			display: flex;
 			flex-wrap: wrap;
 			align-items: center;
