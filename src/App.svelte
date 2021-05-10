@@ -1,43 +1,48 @@
 <script>
+	import FooterLink from './FooterLink.svelte';
 
 </script>
 
 <main>
-	<a class="box box1" target="_blank" rel="noopener" href="https://dribbble.com">
-		<h4>DRIBBLE</h4>
-	</a>
-	<a class="box box2" target="_blank" rel="noopener" href="https://linkedin.com">
-		<h4>LINKEDIN</h4>
-	</a>
-	<a class="box box3" target="_blank" rel="noopener" href="https://twitter.com">
-		<h4>TWITTER</h4>
-	</a>
+	<footer>
+		<FooterLink src="https://dribble.com" linkName="Dribble"></FooterLink>
+		<FooterLink src="https://twitter.com" linkName="Twitter"></FooterLink>
+		<FooterLink src="https://linkedin.com" linkName="LinkedIn"></FooterLink>
+	</footer>
 </main>
 
 <style lang="scss">
+	@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@700&display=swap');
+
 	main {
+		background-color: rgb(36, 36, 36);
 		display: flex;
 		flex-wrap: wrap;
 		align-items: center;
 		justify-content: space-between;
+		height: 100%;
+		padding: 1rem;
 		@media (orientation: portrait) {
 			flex-direction: column;
 		}
 		@media (min-width: 1024px) {
 			flex-direction: row;
 		}
-		.box {
-			background-color: orangered;
-			padding: 2.5rem;
-			color: white;
+		footer {
+			background-color: rgb(36, 36, 36);
 			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: space-between;
+			height: 380px;
 			width: 100%;
-			flex-grow: 1;
-			flex-shrink: 1;
-			flex-basis: 0;
-			h4 {
-				text-transform: uppercase;
+			@media (orientation: portrait) {
+				flex-direction: column;
+			}
+			@media (min-width: 1024px) {
+				flex-direction: row;
 			}
 		}
+
 	}
 </style>
