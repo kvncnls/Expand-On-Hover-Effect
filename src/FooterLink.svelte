@@ -17,8 +17,8 @@
 </a>
 
 <style lang="scss">
-@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@700&display=swap');
-
+    @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 .box {
     position: relative;
     font-family: 'Passion One', sans-serif;
@@ -45,7 +45,7 @@
     div {
         position: absolute;
         transition: 300ms;
-        height: 1rem;
+        height: 1.4rem;
         width: 50%;
         overflow: hidden;
         flex-direction: row;
@@ -53,10 +53,12 @@
         justify-content: space-between;
         bottom: 4rem;
         p {
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold;
             position: absolute;
             transition: 300ms;
             opacity: 1;
-            font-size: 1rem;
+            font-size: 1.2rem;
             font-weight: 100;
             pointer-events: none;
             top: 50px;
