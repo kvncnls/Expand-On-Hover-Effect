@@ -40,6 +40,7 @@
     margin: 1rem;
     svg {
         transition: 500ms;
+        transform-origin: center;
         transform: rotate(90deg);
         opacity: 0;
     }
@@ -90,7 +91,7 @@
 
             svg {
                 opacity: 1;
-                transform: rotate(0);
+                transform: rotate(0) translateY(-2.5rem);
                 path {
                     fill: orangered;
                 }
