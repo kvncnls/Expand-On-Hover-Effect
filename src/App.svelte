@@ -42,10 +42,10 @@
 			flex-direction: column;
 			align-items: center;
 			justify-content: space-between;
-			height: 380px;
 			width: 100%;
-			@media (min-width: 768px) {
+			@media (min-width: 1024px) {
 				flex-direction: row;
+				height: 380px;
 			}
 		}
 

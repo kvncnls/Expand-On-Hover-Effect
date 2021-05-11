@@ -24,12 +24,14 @@
     position: relative;
     font-family: 'Passion One', sans-serif;
     background-color: orangered;
-    padding: 4rem 2rem;
+    padding: 4rem 0rem;
+    width: 100%;
+    max-width: 500px;
     color: white;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-grow: 1;
     flex-shrink: 1;
     flex-basis: 0;
@@ -37,68 +39,83 @@
     overflow: hidden;
     cursor: pointer;
     transition: 300ms;
-    margin: 1rem;
-    svg {
-        transition: 500ms;
-        transform-origin: center;
-        transform: rotate(90deg);
-        opacity: 0;
-    }
-    div {
-        position: absolute;
-        transition: 300ms;
-        height: 1.4rem;
-        width: 50%;
-        overflow: hidden;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        bottom: 4rem;
-        p {
-            font-family: 'Roboto', sans-serif;
-            font-weight: bold;
+    margin: 1rem 0rem;
+
+        svg {
+            transition: 300ms;
+            transform-origin: center;
+            opacity: 1;
+            @media (min-width: 1024px) {
+                position: absolute;
+                right: 1rem;
+                transform: rotate(90deg);
+                opacity: 0;
+            }
+        }
+
+        div {
             position: absolute;
             transition: 300ms;
+            height: 1.4rem;
+            width: 100%;
+            overflow: hidden;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            bottom: 4rem;
+
+            p {
+                font-family: 'Roboto', sans-serif;
+                font-weight: bold;
+                position: absolute;
+                transition: 300ms;
+                opacity: 1;
+                font-size: 1.2rem;
+                font-weight: 100;
+                pointer-events: none;
+                top: 150px;
+            }
+        }
+
+        h4 {
             opacity: 1;
-            font-size: 1.2rem;
-            font-weight: 100;
-            pointer-events: none;
-            top: 50px;
+            transition: 250ms;
+            text-transform: uppercase;
+            font-size: 2.4rem;
         }
-    }
-    h4 {
-        opacity: 1;
-        transition: 250ms;
-        text-transform: uppercase;
-        font-size: 2.4rem;
-    }
-    @media (min-width: 768px) {
-        &:hover {
-        flex-grow: 2;
-        background-color: whitesmoke;
-        color: orangered;
-            h4 {
-                transform: scale(0.8) translateY(-3rem) translateX(-1rem);
-            }
-            div {
-                width: 100%;
-                p {
-                opacity: 1;
+
+        @media (min-width: 1024px) {
+            margin: 1rem;
+
+            &:hover {
+                flex-grow: 2;
+                background-color: whitesmoke;
                 color: orangered;
-                top: 0;
-                }
-            }
 
-            svg {
-                opacity: 1;
-                transform: rotate(0) translateY(-2.5rem);
-                path {
-                    fill: orangered;
+                h4 {
+                    transform: scale(0.8) translateY(-3rem) translateX(-2.5rem);
+                }
+
+                div {
+                    p {
+                        opacity: 1;
+                        color: orangered;
+                        top: 0;
+                        transform: translateX(3rem);
+                    }
+                }
+
+                svg {
+                    position: relative;
+                    right: -2.5rem;
+                    opacity: 1;
+                    transform: rotate(0);
+                    path {
+                        fill: orangered;
+                    }
                 }
             }
         }
-    }
-
     }
 </style>
 
