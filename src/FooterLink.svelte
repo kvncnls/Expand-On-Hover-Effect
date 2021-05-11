@@ -84,6 +84,23 @@
             font-size: 2.4rem;
         }
 
+        &:hover {
+                background-color: whitesmoke;
+                color: orangered;
+
+                div {
+                    p {
+                        color: orangered
+                    }
+                }
+
+                svg {
+                    path {
+                        fill: orangered;
+                    }
+                }
+            }
+
         @media (min-width: 1024px) {
             margin: 1rem;
 
