@@ -4,7 +4,7 @@
     export let content;
 </script>
 
-<a class="box box3" target="_blank" rel="noopener" href={src}>
+<a class="box" target="_blank" rel="noopener" href={src}>
     <h4>{linkName}</h4>
     <div>
         <p>{content}</p>
