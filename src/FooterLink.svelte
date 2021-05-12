@@ -26,7 +26,7 @@
     background-color: orangered;
     padding: 4rem 0rem;
     width: 100%;
-    max-width: 500px;
+    max-width: 600px;
     color: white;
     display: flex;
     flex-direction: row;
@@ -62,7 +62,7 @@
             flex-direction: row;
             align-items: center;
             justify-content: space-between;
-            bottom: 4rem;
+            bottom: 2.25rem;
 
             p {
                 font-family: 'Roboto', sans-serif;
@@ -79,6 +79,7 @@
 
         h4 {
             opacity: 1;
+            transform-origin: left;
             transition: 250ms;
             text-transform: uppercase;
             font-size: 2.4rem;
@@ -104,13 +105,18 @@
         @media (min-width: 1024px) {
             margin: 1rem;
 
+            h4 {
+                position: absolute;
+            }
+
             &:hover {
                 flex-grow: 2;
                 background-color: whitesmoke;
                 color: orangered;
 
                 h4 {
-                    transform: scale(0.8) translateY(-3rem) translateX(-2.5rem);
+                    left: 3rem;
+                    transform: scale(0.8) translateY(-1rem);
                 }
 
                 div {
@@ -118,13 +124,14 @@
                         opacity: 1;
                         color: orangered;
                         top: 0;
-                        transform: translateX(3rem);
+                        left: 3rem;
+                        /* transform: translateX(3rem); */
                     }
                 }
 
                 svg {
-                    position: relative;
-                    right: -2.5rem;
+                    position: absolute;
+                    right: 2.5rem;
                     opacity: 1;
                     transform: rotate(0);
                     path {
