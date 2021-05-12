@@ -38,11 +38,11 @@
     border: 1px solid white;
     overflow: hidden;
     cursor: pointer;
-    transition: 300ms;
+    transition: 400ms;
     margin: 1rem 0rem;
 
         svg {
-            transition: 300ms;
+            transition: 500ms;
             transform-origin: center;
             opacity: 1;
             @media (min-width: 1024px) {
@@ -55,7 +55,7 @@
 
         div {
             position: absolute;
-            transition: 300ms;
+            /* transition: 400ms; */
             height: 1.4rem;
             width: 100%;
             overflow: hidden;
@@ -68,7 +68,7 @@
                 font-family: 'Roboto', sans-serif;
                 font-weight: bold;
                 position: absolute;
-                transition: 300ms;
+                transition: 500ms;
                 opacity: 1;
                 font-size: 1.2rem;
                 font-weight: 100;
@@ -104,9 +104,11 @@
 
         @media (min-width: 1024px) {
             margin: 1rem;
+            height: 200px;
 
             h4 {
                 position: absolute;
+                font-size: 4rem;
             }
 
             &:hover {
@@ -116,16 +118,16 @@
 
                 h4 {
                     left: 3rem;
-                    transform: scale(0.8) translateY(-1rem);
+                    transform: scale(0.5) translateY(-2rem);
                 }
 
                 div {
+                    transform: translateY(-2rem);
                     p {
                         opacity: 1;
                         color: orangered;
                         top: 0;
                         left: 3rem;
-                        /* transform: translateX(3rem); */
                     }
                 }
 
