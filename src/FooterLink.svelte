@@ -42,7 +42,7 @@
     margin: 1rem 0rem;
 
         svg {
-            transition: 500ms;
+            transition: 250ms;
             transform-origin: center;
             opacity: 1;
             @media (min-width: 1024px) {
@@ -55,7 +55,6 @@
 
         div {
             position: absolute;
-            /* transition: 400ms; */
             height: 1.4rem;
             width: 100%;
             overflow: hidden;
@@ -89,12 +88,6 @@
                 background-color: whitesmoke;
                 color: orangered;
 
-                div {
-                    p {
-                        color: orangered
-                    }
-                }
-
                 svg {
                     path {
                         fill: orangered;
@@ -111,6 +104,13 @@
                 font-size: 4rem;
             }
 
+            div {
+                bottom: 4.25rem;
+                p {
+                    left: 3rem;
+                }
+            }
+
             &:hover {
                 flex-grow: 2;
                 background-color: whitesmoke;
@@ -122,12 +122,10 @@
                 }
 
                 div {
-                    transform: translateY(-2rem);
                     p {
                         opacity: 1;
                         color: orangered;
                         top: 0;
-                        left: 3rem;
                     }
                 }
 
