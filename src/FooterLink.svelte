@@ -42,7 +42,7 @@
     margin: 1rem 0rem;
 
         svg {
-            transition: 250ms;
+            transition: 350ms;
             transform-origin: center;
             opacity: 1;
             @media (min-width: 1024px) {
